@@ -31,18 +31,18 @@ export default function Shop() {
   return (
     <div className="min-h-screen">
       <Header />
-      <div className="border-b bg-card py-12">
+      <div className="border-b bg-card py-8 sm:py-12">
         <div className="container mx-auto px-4">
-          <h1 className="mb-4 text-center font-display text-5xl font-bold md:text-6xl">
+          <h1 className="mb-3 sm:mb-4 text-center font-display text-3xl font-bold sm:text-5xl md:text-6xl">
             Shop Our Collection
           </h1>
-          <p className="mx-auto max-w-2xl text-center font-body text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-center font-body text-base sm:text-lg text-muted-foreground">
             Browse our carefully curated selection of antiques and collectables
           </p>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-8 sm:py-12">
         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="relative flex-1 sm:max-w-md">
             <Search className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
@@ -61,7 +61,7 @@ export default function Shop() {
           </Button>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {allProducts.map((product) => (
             <ProductCard key={product.id} {...product} />
           ))}

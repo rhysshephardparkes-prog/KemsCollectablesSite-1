@@ -31,21 +31,21 @@ export default function Contact() {
     <div className="min-h-screen">
       <Header />
 
-      <div className="border-b bg-card py-12">
+      <div className="border-b bg-card py-8 sm:py-12">
         <div className="container mx-auto px-4">
-          <h1 className="mb-4 text-center font-display text-5xl font-bold md:text-6xl">
+          <h1 className="mb-3 sm:mb-4 text-center font-display text-3xl font-bold sm:text-5xl md:text-6xl">
             Contact Us
           </h1>
-          <p className="mx-auto max-w-2xl text-center font-body text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-center font-body text-base sm:text-lg text-muted-foreground">
             Have a question or looking for something specific? We'd love to hear from you.
           </p>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid gap-12 lg:grid-cols-2">
+      <div className="container mx-auto px-4 py-8 sm:py-16">
+        <div className="grid gap-8 sm:gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="mb-6 font-display text-3xl font-bold">Get in Touch</h2>
+            <h2 className="mb-4 sm:mb-6 font-display text-2xl sm:text-3xl font-bold">Get in Touch</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="name">Name</Label>
@@ -105,8 +105,8 @@ export default function Contact() {
             </form>
           </div>
 
-          <div className="space-y-6">
-            <h2 className="font-display text-3xl font-bold">Visit Our Store</h2>
+          <div className="space-y-4 sm:space-y-6">
+            <h2 className="font-display text-2xl sm:text-3xl font-bold">Visit Our Store</h2>
 
             <Card className="p-6 space-y-4">
               <div className="flex items-start gap-4">

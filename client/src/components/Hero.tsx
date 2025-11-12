@@ -4,7 +4,7 @@ import storefrontImage from "@assets/kem_1762956401281.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative h-[80vh] min-h-[600px] overflow-hidden">
+    <section className="relative h-[70vh] min-h-[500px] sm:h-[80vh] sm:min-h-[600px] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -16,16 +16,16 @@ export default function Hero() {
 
       <div className="relative z-10 flex h-full items-center">
         <div className="container mx-auto px-4 text-center">
-          <div className="mx-auto max-w-4xl space-y-6">
-            <h1 className="font-display text-5xl font-bold leading-tight text-white md:text-6xl lg:text-7xl">
+          <div className="mx-auto max-w-4xl space-y-4 sm:space-y-6">
+            <h1 className="font-display text-3xl font-bold leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Welcome to Kem's
               <br />
               Antiques & Collectables
             </h1>
-            <p className="mx-auto max-w-2xl font-body text-lg leading-relaxed text-white/90 md:text-xl">
+            <p className="mx-auto max-w-2xl font-body text-base leading-relaxed text-white/90 sm:text-lg md:text-xl">
               Discover a treasure trove of antiques and collectables at Kem's. From vintage toys to rare records, explore our curated selection and find timeless pieces to cherish.
             </p>
-            <div className="flex flex-col items-center justify-center gap-4 pt-4 sm:flex-row">
+            <div className="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row sm:gap-4 sm:pt-4">
               <Button
                 size="lg"
                 className="group bg-primary text-primary-foreground"

@@ -20,15 +20,15 @@ const newsItems = [
 
 export default function LatestNews() {
   return (
-    <section className="bg-card py-16">
+    <section className="bg-card py-12 sm:py-16">
       <div className="container mx-auto px-4">
-        <div className="mb-12 text-center">
-          <h2 className="font-display text-4xl font-bold md:text-5xl">Latest News</h2>
-          <p className="mt-4 font-body text-lg text-muted-foreground">
+        <div className="mb-8 sm:mb-12 text-center">
+          <h2 className="font-display text-3xl font-bold sm:text-4xl md:text-5xl">Latest News</h2>
+          <p className="mt-3 sm:mt-4 font-body text-base sm:text-lg text-muted-foreground">
             Stay updated with our newest arrivals and announcements
           </p>
         </div>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2">
           {newsItems.map((item) => (
             <Card key={item.id} className="overflow-hidden hover-elevate" data-testid={`card-news-${item.id}`}>
               <div className="relative h-48 overflow-hidden bg-muted">

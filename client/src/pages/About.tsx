@@ -9,21 +9,21 @@ export default function About() {
     <div className="min-h-screen">
       <Header />
 
-      <div className="border-b bg-card py-12">
+      <div className="border-b bg-card py-8 sm:py-12">
         <div className="container mx-auto px-4">
-          <h1 className="mb-4 text-center font-display text-5xl font-bold md:text-6xl">
+          <h1 className="mb-3 sm:mb-4 text-center font-display text-3xl font-bold sm:text-5xl md:text-6xl">
             About Kem's Antiques
           </h1>
-          <p className="mx-auto max-w-2xl text-center font-body text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-center font-body text-base sm:text-lg text-muted-foreground">
             A family legacy of preserving history, one treasure at a time
           </p>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
-          <div className="space-y-6">
-            <h2 className="font-display text-4xl font-bold">Our Story</h2>
+      <div className="container mx-auto px-4 py-8 sm:py-16">
+        <div className="grid gap-8 sm:gap-12 lg:grid-cols-2 lg:gap-16">
+          <div className="space-y-4 sm:space-y-6">
+            <h2 className="font-display text-2xl sm:text-4xl font-bold">Our Story</h2>
             <div className="space-y-4 font-body leading-relaxed text-muted-foreground">
               <p>
                 Established in 1985, Kem's Antiques & Collectables has been a cornerstone of the antiques community for nearly four decades. What began as a small shop has grown into a beloved destination for collectors, historians, and anyone who appreciates the beauty of bygone eras.
@@ -46,7 +46,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-3">
+        <div className="mt-8 sm:mt-16 grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-3">
           <Card className="p-6 text-center">
             <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-md bg-primary/10">
               <History className="h-8 w-8 text-primary" />

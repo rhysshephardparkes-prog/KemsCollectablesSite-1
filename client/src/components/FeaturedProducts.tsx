@@ -77,15 +77,15 @@ const featuredProducts = [
 
 export default function FeaturedProducts() {
   return (
-    <section className="py-16">
+    <section className="py-12 sm:py-16">
       <div className="container mx-auto px-4">
-        <div className="mb-12 text-center">
-          <h2 className="font-display text-4xl font-bold md:text-5xl">Featured Items</h2>
-          <p className="mt-4 font-body text-lg text-muted-foreground">
+        <div className="mb-8 sm:mb-12 text-center">
+          <h2 className="font-display text-3xl font-bold sm:text-4xl md:text-5xl">Featured Items</h2>
+          <p className="mt-3 sm:mt-4 font-body text-base sm:text-lg text-muted-foreground">
             Handpicked treasures from our curated collection
           </p>
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {featuredProducts.map((product) => (
             <ProductCard key={product.id} {...product} />
           ))}
