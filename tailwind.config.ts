@@ -86,6 +86,9 @@ export default {
         sans: ["var(--font-sans)"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
+        display: ["Playfair Display", "serif"],
+        body: ["Lora", "serif"],
+        accent: ["Cormorant Garamond", "serif"],
       },
       keyframes: {
         "accordion-down": {
