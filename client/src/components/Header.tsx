@@ -26,25 +26,17 @@ export default function Header() {
           </Link>
 
           <nav className="hidden items-center gap-6 md:flex">
-            <Link href="/" data-testid="link-home">
-              <a className="font-body text-sm font-medium transition-colors hover:text-primary">
-                Home
-              </a>
+            <Link href="/" data-testid="link-home" className="font-body text-sm font-medium transition-colors hover:text-primary">
+              Home
             </Link>
-            <Link href="/shop" data-testid="link-shop">
-              <a className="font-body text-sm font-medium transition-colors hover:text-primary">
-                Shop
-              </a>
+            <Link href="/shop" data-testid="link-shop" className="font-body text-sm font-medium transition-colors hover:text-primary">
+              Shop
             </Link>
-            <Link href="/about" data-testid="link-about">
-              <a className="font-body text-sm font-medium transition-colors hover:text-primary">
-                About
-              </a>
+            <Link href="/about" data-testid="link-about" className="font-body text-sm font-medium transition-colors hover:text-primary">
+              About
             </Link>
-            <Link href="/contact" data-testid="link-contact">
-              <a className="font-body text-sm font-medium transition-colors hover:text-primary">
-                Contact
-              </a>
+            <Link href="/contact" data-testid="link-contact" className="font-body text-sm font-medium transition-colors hover:text-primary">
+              Contact
             </Link>
           </nav>
 
@@ -90,17 +82,17 @@ export default function Header() {
         {isMenuOpen && (
           <div className="border-t py-4 md:hidden">
             <nav className="flex flex-col gap-3">
-              <Link href="/" data-testid="link-mobile-home">
-                <a className="font-body text-sm font-medium">Home</a>
+              <Link href="/" data-testid="link-mobile-home" className="font-body text-sm font-medium">
+                Home
               </Link>
-              <Link href="/shop" data-testid="link-mobile-shop">
-                <a className="font-body text-sm font-medium">Shop</a>
+              <Link href="/shop" data-testid="link-mobile-shop" className="font-body text-sm font-medium">
+                Shop
               </Link>
-              <Link href="/about" data-testid="link-mobile-about">
-                <a className="font-body text-sm font-medium">About</a>
+              <Link href="/about" data-testid="link-mobile-about" className="font-body text-sm font-medium">
+                About
               </Link>
-              <Link href="/contact" data-testid="link-mobile-contact">
-                <a className="font-body text-sm font-medium">Contact</a>
+              <Link href="/contact" data-testid="link-mobile-contact" className="font-body text-sm font-medium">
+                Contact
               </Link>
             </nav>
           </div>

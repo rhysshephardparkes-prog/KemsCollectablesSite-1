@@ -17,18 +17,18 @@ export default function Footer() {
             <h3 className="mb-4 font-display text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2 font-body text-sm">
               <li>
-                <Link href="/shop" data-testid="link-footer-shop">
-                  <a className="transition-colors hover:text-primary">Shop All Items</a>
+                <Link href="/shop" data-testid="link-footer-shop" className="transition-colors hover:text-primary">
+                  Shop All Items
                 </Link>
               </li>
               <li>
-                <Link href="/about" data-testid="link-footer-about">
-                  <a className="transition-colors hover:text-primary">About Us</a>
+                <Link href="/about" data-testid="link-footer-about" className="transition-colors hover:text-primary">
+                  About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact" data-testid="link-footer-contact">
-                  <a className="transition-colors hover:text-primary">Contact</a>
+                <Link href="/contact" data-testid="link-footer-contact" className="transition-colors hover:text-primary">
+                  Contact
                 </Link>
               </li>
             </ul>
