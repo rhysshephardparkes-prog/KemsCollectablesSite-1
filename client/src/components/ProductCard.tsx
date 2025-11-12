@@ -45,7 +45,7 @@ export default function ProductCard({ id, name, price, image, condition, categor
         </div>
         <div className="flex items-center justify-between gap-2">
           <span className="font-display text-2xl font-bold text-primary" data-testid={`text-price-${id}`}>
-            ${price.toLocaleString()}
+            £{price.toLocaleString()}
           </span>
           <Button
             size="sm"
